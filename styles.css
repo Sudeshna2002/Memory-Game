@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background:lemonchiffon;
+
+}
+.memory-game{
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 100px;
+
+}
+.memory-card{
+    width:calc(25% - 10px) ;
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style:preserve-3d;
+    transition: transform.5s;
+}
+.memory-card:active{
+    transform: scale(.97);
+    transition: transform.2s;
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+.front-face,
+.back-face{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background:yellow ;
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+.game{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.controls{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+button{
+    background: rgb(0, 0, 0);
+    color: rgb(223, 0, 0);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18pt;
+    font-weight: bold; 
+}
+
+.disable{
+    color: #c63b3b;
+}
+.stats{
+    color: #fff;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.board{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 20px;
+}
+.board-container.flipped.board{
+    transform: rotateY(180deg) rotateZ(50deg);
+    
+}
+.board-container.flipped .win{
+    transform: rotateY(0) rotateZ(0);
+
+}
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.card-front,.card-back{
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg)  rotateZ(50deg);
+    font-size: 28pt;
+    user-select: none;
+    text-align: center;
+    line-height: 100px;
+    background: #fdf8e6;
+}
+.card.flipped .card-front{
+    transform: rotateY(180deg)  rotateZ(50deg);
+}
+.card.flipped .card-back{
+    transform: rotateY(0)  rotateZ(0);
+}
+.win{
+    display:none;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    
+    text-align: center;
+    background: #fdf8e6;
+    transform: translate(-50%, -50%);
+    
+
+}
+.win-text {
+    
+    font-size: 21pt;
+    color: #282A3A;
+}
+
+.win.visible {
+    display: block;
+}
+
