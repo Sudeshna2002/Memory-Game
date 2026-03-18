@@ -1,11 +1,11 @@
 Memory Game
-Overview
+Overview : 
 
 This project is a browser-based Memory Card Matching Game built using HTML, CSS, and JavaScript. The application focuses on interactive gameplay, where users flip cards to find matching pairs while tracking moves and time.
 
 The project was developed to strengthen understanding of DOM manipulation, event handling, and game logic implementation in JavaScript.
 
-Features
+Features :
 
 Card matching logic with flip animations
 
@@ -19,7 +19,7 @@ Win detection with completion message
 
 Responsive and interactive UI
 
-Current Limitations
+Current Limitations :
 
 Game requires page refresh to restart
 
@@ -27,7 +27,7 @@ Fixed grid size (4x4)
 
 Single theme (fruits)
 
-Planned Enhancements
+Planned Enhancements :
 
 Restart / Play Again functionality without page refresh
 
