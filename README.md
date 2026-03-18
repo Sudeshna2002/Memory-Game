@@ -37,7 +37,7 @@ Theme selection (Animals, Flowers, etc.)
 
 Improved UI/UX and animations
 
-Technologies Used
+Technologies Used :
 
 HTML5
 
@@ -45,7 +45,7 @@ CSS3
 
 JavaScript (Vanilla JS)
 
-How to Run the Project
+How to Run the Project :-
 
 Clone the repository:
 
@@ -57,7 +57,7 @@ cd Memory-Game
 
 Open index.html in any browser.
 
-Project Structure
+Project Structure :
 
 index.html – Main structure of the game
 
@@ -67,7 +67,7 @@ scripts.js – Game logic and functionality
 
 img/ – Image assets used in the game
 
-Learning Outcomes
+Learning Outcomes :
 
 Implemented game logic using JavaScript
 
@@ -77,11 +77,11 @@ Worked with event listeners and state management
 
 Built a complete interactive frontend project
 
-Live Demo
+Live Demo :
 
 Available via GitHub Pages (may vary depending on browser security settings).
 
-Author
+Author :
 
 Sudeshna Ghosh
 GitHub: https://github.com/Sudeshna2002
