@@ -1,4 +1,4 @@
-Memory Game
+# Memory Game
 Overview : 
 
 This project is a browser-based Memory Card Matching Game built using HTML, CSS, and JavaScript. The application focuses on interactive gameplay, where users flip cards to find matching pairs while tracking moves and time.
